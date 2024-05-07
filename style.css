@@ -11,44 +11,22 @@ body, h1 { /* Margin removal, add more elements as seen fit */
   }
 
 body { /*TODO: Add light/dark-mode*/
-    background: #e6dfd6;
+    background: --primary;
+    background: linear-gradient(90deg, rgba(18,17,33,1) 0%, rgba(58,53,64,1) 0%, rgba(58,53,64,1) 11%, rgba(210,195,140,1) 100%, rgba(0,212,255,1) 100%);
 }
 
 /*Upper header*/
 
-.header {
+header {
     text-align: left;
     background-color: var(--primary);
     padding: 20px;
     color: var(--text_color);
-    display: flex;
-    flex-direction: row;
     height: 70px;
 }
 
 .header h1 {
     font-size: 30px;
-}
-
-.header_icons * {
-    width: 70px;
-}
-
-
-/*lower header*/
-
-.lower_header {
-  background-color: transparent;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-}
-
-.header_icons {
-    margin-left: auto;
 }
 
 
@@ -57,7 +35,7 @@ body { /*TODO: Add light/dark-mode*/
 .skill_cube {
     background-color: black;
     width: 600px;
-    height: 4430px;
+    height: 480px;
     margin-left: 30%;
     align-content: center;
     text-align: center;
@@ -67,3 +45,38 @@ body { /*TODO: Add light/dark-mode*/
     color: white;
     font-size: larger;
 }
+
+
+/*main*/
+
+.placeholder {
+    background-color: var(--primary);
+    width: 100%;
+    height: 2000px;
+}
+
+
+/*lower header*/
+
+footer {
+    box-sizing: border-box;
+    padding: 0 20px;
+    background-color: transparent;
+    color: var(--text_color);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 115px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .contact_icons {
+      margin-left: auto;
+  }
+  
+  .contact_icons * {
+      width: 70px;
+      fill: var(--text_color);
+  }
